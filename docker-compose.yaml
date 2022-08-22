@@ -3,6 +3,6 @@ web:
   container_name: website
   restart: always
   volumes:
-   - ./src:/usr/share/nginx/html:ro
+   - .:/usr/share/nginx/html:ro
   ports:
    - "1000:80"
