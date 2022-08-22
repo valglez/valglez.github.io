@@ -1,0 +1,8 @@
+web:
+  image: nginx
+  container_name: website
+  restart: always
+  volumes:
+   - ./src:/usr/share/nginx/html:ro
+  ports:
+   - "1000:80"
